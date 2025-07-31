@@ -8,7 +8,6 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Search, FileSpreadsheet, ChevronLeft, ChevronRight, ArrowUpDown } from "lucide-react";
 import type { ProductionProgram } from "@shared/schema";
 
-interface ProductionTableProps {
   dateRange: {
     from;
     to;
