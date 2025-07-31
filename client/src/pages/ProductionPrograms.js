@@ -1,8 +1,26 @@
+import { useState } from "react";
+import { DateRangePicker } from "../components/DateRangePicker";
+import { ProductionTable } from "../components/ProductionTable";
+import { Database } from "lucide-react";
+
 export default function ProductionPrograms() {
+  const [dateRange, setDateRange] = useState({
+    from: new Date(new Date().getFullYear(), new Date().getMonth(), 1),
+    to: new Date(),
+  });
+
   return (
-    <div className="max-w-4xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-xl">
-      <h1 className="text-2xl font-bold mb-4">Programy Produkcyjne</h1>
-      <p className="text-gray-700">Lista i zarządzanie programami uruchamianymi na maszynach. Tu można pokazać dane z backendu.</p>
+    <div className="space-y-6">
+      <div className="flex justify-between items-center">
+        <h1 className="text-3xl font-bold">Monitoring Programów Produkcyjnych</h1>
+        <div className="flex items-center space-x-2">
+          <Database className="h-6 w-6 text-accent" />
+          <span className="text-sm text-muted-foreground">Historia i szczegóły programów</span>
+        </div>
+      </div>
+
+      <DateRangePicker dateRange={dateRange} onDateRangeChange={setDateRange} />
+      <ProductionTable dateRange={dateRange} />
     </div>
   );
 }
