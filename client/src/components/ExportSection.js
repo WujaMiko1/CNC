@@ -7,14 +7,12 @@ import { Label } from "@/components/ui/label";
 import { Download } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
-interface ExportSectionProps {
   dateRange: {
     from;
     to;
   };
 }
 
-interface ExportConfig {
   fields[];
   timeFormat: 'hms' | 'seconds' | 'minutes' | 'hours';
   separator: 'comma' | 'semicolon' | 'tab';
