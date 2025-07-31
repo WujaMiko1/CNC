@@ -2,7 +2,6 @@ services:
   - type: web
     name: cnc-backend
     env: node
-    plan: free
     buildCommand: npm install
     startCommand: npm start
     rootDir: server
@@ -13,7 +12,6 @@ services:
   - type: web
     name: cnc-frontend
     env: static
-    plan: free
     buildCommand: npm install && npm run build
     staticPublishPath: build
     rootDir: client
