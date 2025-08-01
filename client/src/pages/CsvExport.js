@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { DateRangePicker } from "@/components/date-range-picker";
-import { ExportSection } from "@/components/export-section";
+import { DateRangePicker } from "@/components/DateRangePicker";
+import { ExportSection } from "@/components/SxportSection";
 import { Download, FileSpreadsheet, Settings } from "lucide-react";
 
 export default function CsvExport() {
