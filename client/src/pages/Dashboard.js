@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { StatsOverview } from "@/components/stats-overview";
-import { DateRangePicker } from "@/components/date-range-picker";
-import { ProductionTable } from "@/components/production-table";
-import { ChartSection } from "@/components/chart-section";
-import { ExportSection } from "@/components/export-section";
+import { StatsOverview } from "@/components/StatsOverview";
+import { DateRangePicker } from "@/components/DateRangePicker";
+import { ProductionTable } from "@/components/ProductionTable";
+import { ChartSection } from "@/components/ChartSection";
+import { ExportSection } from "@/components/ExportSection";
 import { BarChart3, Activity } from "lucide-react";
 
 export default function Dashboard() {
