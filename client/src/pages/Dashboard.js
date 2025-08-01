@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { StatsOverview } from "@/components/StatsOverview";
-import { DateRangePicker } from "@/components/DateRangePicker";
-import { ProductionTable } from "@/components/ProductionTable";
-import { ChartSection } from "@/components/ChartSection";
-import { ExportSection } from "@/components/ExportSection";
+import StatsOverview from "../components/StatsOverview";
+import DateRangePicker from "../components/DateRangePicker";
+import ProductionTable from "../components/ProductionTable";
+import ChartSection from "../components/ChartSection";
+import ExportSection from "../components/ExportSection";
 import { BarChart3, Activity } from "lucide-react";
 
 export default function Dashboard() {
@@ -22,7 +22,6 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Breadcrumbs */}
       <nav className="mb-6">
         <ol className="flex items-center space-x-2 text-sm text-muted-foreground">
           <li><span>System</span></li>
@@ -31,22 +30,14 @@ export default function Dashboard() {
         </ol>
       </nav>
 
-      {/* Date Range Picker */}
       <DateRangePicker 
         dateRange={dateRange}
         onDateRangeChange={setDateRange}
       />
 
-      {/* Stats Overview */}
       <StatsOverview dateRange={dateRange} />
-
-      {/* Charts */}
       <ChartSection dateRange={dateRange} />
-
-      {/* Production Table */}
       <ProductionTable dateRange={dateRange} />
-
-      {/* Export Section */}
       <ExportSection dateRange={dateRange} />
     </div>
   );
