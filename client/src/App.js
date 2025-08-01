@@ -6,7 +6,6 @@ import ProductionAnalysis from "./pages/ProductionAnalysis";
 import MachineMonitoring from "./pages/MachineMonitoring";
 import ProductionPrograms from "./pages/ProductionPrograms";
 import CsvExport from "./pages/CsvExport";
-import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 
 const queryClient = new QueryClient();
