@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { DateRangePicker } from "@/components/DateRangePicker";
-import { StatsOverview } from "@/components/StatsOverview";
-import { ChartSection } from "@/components/ChartSection";
+import Card, CardContent, CardHeader, CardTitle from "@/components/ui/card";
+import DateRangePicker from "@/components/DateRangePicker";
+import StatsOverview from "@/components/StatsOverview";
+import ChartSection from "@/components/ChartSection";
 import { BarChart3, TrendingUp, Clock, Target } from "lucide-react";
 import type { ProductionProgram } from "@shared/schema";
 
