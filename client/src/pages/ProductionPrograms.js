@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { DateRangePicker } from "@/components/date-range-picker";
-import { ProductionTable } from "@/components/production-table";
+import { DateRangePicker } from "@/components/DateRangePicker";
+import { ProductionTable } from "@/components/ProductionTable";
 import { FileSearch, Database, Filter } from "lucide-react";
 
 export default function ProductionPrograms() {
